@@ -1,0 +1,61 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.site_setting_entity.contact.contact_address
+    - field.field.site_setting_entity.contact.contact_email
+    - field.field.site_setting_entity.contact.contact_phone
+    - site_settings.site_setting_entity_type.contact
+  module:
+    - text
+    - user
+id: site_setting_entity.contact.default
+targetEntityType: site_setting_entity
+bundle: contact
+mode: default
+content:
+  contact_address:
+    weight: 2
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  contact_email:
+    weight: 3
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  contact_phone:
+    weight: 1
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  fieldset:
+    label: above
+    type: string
+    weight: -4
+    region: content
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+  name:
+    label: above
+    type: string
+    weight: -4
+    region: content
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+  user_id:
+    label: hidden
+    type: author
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden: {  }

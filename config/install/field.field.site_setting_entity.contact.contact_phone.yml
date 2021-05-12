@@ -1,0 +1,20 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.site_setting_entity.contact_phone
+    - site_settings.site_setting_entity_type.contact
+  module:
+    - text
+id: site_setting_entity.contact.contact_phone
+field_name: contact_phone
+entity_type: site_setting_entity
+bundle: contact
+label: 'Phone number'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long
